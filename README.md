@@ -6,6 +6,12 @@ An AI-powered climate risk analytics platform developed to predict rice
 productivity and provide explainable climate adaptation insights using
 Machine Learning, Explainable AI (SHAP), and decision-support analytics.
 
+## 🚀 Live Demo
+
+Try the interactive dashboard:
+
+[Open Climate Food Security Dashboard]([YOUR_STREAMLIT_LINK](https://ai-climate-risk-food-security-bgeuqhth2hpdastsktd5hw.streamlit.app/))
+
 ## Key Features
 
 -   Rice yield prediction using Machine Learning
