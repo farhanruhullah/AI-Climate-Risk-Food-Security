@@ -1543,67 +1543,38 @@ affecting food productivity.
     )
 
 
-
-
-
-
-
 # ==========================
 # FOOTER
 # ==========================
 
-
 st.markdown(
+    """
+    <div style="
+        text-align:center;
+        padding:15px;
+        color:#666;
+        font-size:14px;
+        border-top:1px solid #ddd;
+        margin-top:30px;
+    ">
 
-"""
+    <strong>
+    🌾 Climate Food Security Intelligence
+    </strong>
 
-<hr>
+    <br>
 
+    AI-powered climate risk analytics and decision support
 
-<div style="
+    <br>
 
-text-align:center;
+    Machine Learning • Explainable AI • Climate Analytics
 
-padding:15px;
+    <br>
 
-color:#666;
+    Built with Python | Machine Learning | SHAP | Streamlit
 
-font-size:14px;
-
-">
-
-
-<b>
-
-🌾 Climate Food Security Intelligence
-
-</b>
-
-
-<br><br>
-
-
-AI-powered climate risk analytics and decision support
-
-
-<br><br>
-
-
-Machine Learning • Explainable AI • Climate Analytics
-
-
-<br><br>
-
-
-Built with Python | Machine Learning | SHAP | Streamlit
-
-
-</div>
-
-
-""",
-
-unsafe_allow_html=True
-
+    </div>
+    """,
+    unsafe_allow_html=True
 )
-
