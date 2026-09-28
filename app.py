@@ -495,63 +495,83 @@ elif page == "🤖 AI Prediction":
 
 
 
-    col1, col2 = st.columns(2)
+   
+col1, col2 = st.columns(2)
+
+with col1:
+
+    temperature = st.number_input(
+        "🌡 Temperature (°C)",
+        min_value=-10.0,
+        max_value=60.0,
+        value=float(df["temperature"].mean()),
+        step=0.1
+    )
 
 
-
-    with col1:
-
-
-        temperature = st.number_input(
-            "🌡 Temperature",
-            float(df["temperature"].mean())
-        )
-
-
-        rainfall = st.number_input(
-            "🌧 Rainfall",
-            float(df["rainfall"].mean())
-        )
+    rainfall = st.number_input(
+        "🌧 Rainfall (mm)",
+        min_value=0.0,
+        max_value=5000.0,
+        value=float(df["rainfall"].mean()),
+        step=1.0
+    )
 
 
-        fertilizer = st.number_input(
-            "🌱 Fertilizer",
-            float(df["fertilizer"].mean())
-        )
+    fertilizer = st.number_input(
+        "🌱 Fertilizer",
+        min_value=0.0,
+        max_value=1000.0,
+        value=float(df["fertilizer"].mean()),
+        step=1.0
+    )
 
 
-        gdp = st.number_input(
-            "💰 GDP per Capita",
-            float(df["gdp_per_capita"].mean())
-        )
+    gdp = st.number_input(
+        "💰 GDP per Capita",
+        min_value=0.0,
+        max_value=200000.0,
+        value=float(df["gdp_per_capita"].mean()),
+        step=100.0
+    )
 
 
+with col2:
 
-    with col2:
-
-
-        disaster = st.number_input(
-            "⚠ Disaster Events",
-            0
-        )
-
-
-        flood = st.number_input(
-            "🌊 Flood Events",
-            0
-        )
+    disaster = st.number_input(
+        "⚠ Disaster Events",
+        min_value=0,
+        max_value=100,
+        value=0,
+        step=1
+    )
 
 
-        drought = st.number_input(
-            "🏜 Drought Events",
-            0
-        )
+    flood = st.number_input(
+        "🌊 Flood Events",
+        min_value=0,
+        max_value=100,
+        value=0,
+        step=1
+    )
 
 
-        temp_change = st.number_input(
-            "🌡 Temperature Change",
-            0.0
-        )
+    drought = st.number_input(
+        "🏜 Drought Events",
+        min_value=0,
+        max_value=100,
+        value=0,
+        step=1
+    )
+
+
+    temp_change = st.number_input(
+        "🌡 Temperature Change (°C)",
+        min_value=-10.0,
+        max_value=10.0,
+        value=0.0,
+        step=0.1
+    )
 
 
 
